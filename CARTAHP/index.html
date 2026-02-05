@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta Mágica para Abi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body id="magic-body">
+
+  <!-- Fondos mágicos -->
+  <div id="particles"></div>
+  <div id="floating-candles"></div>
+  <div id="floating-books"></div>
+  <div id="magic-stickers"></div>
+
+  <!-- Inicio -->
+  <section id="intro" class="full-screen center-content">
+    <h1 class="glow-text">Bienvenida a un rincón<br>donde la magia nunca termina</h1>
+    <p class="intro-sub">Para mi Pequeña favorita: Abi ❤️</p>
+    <button id="enter-btn" class="btn-gold">✨ Abrir Carta</button>
+  </section>
+
+  <!-- Navegación -->
+  <nav id="magic-nav" class="hidden">
+    <ul>
+      <li><a href="#letter">📜 Carta</a></li>
+      <li><a href="#memories">🖼️ Recuerdos</a></li>
+      <li><a href="#interactive">🪄 Magia</a></li>
+      <li><a href="#final">🌌 Final</a></li>
+    </ul>
+  </nav>
+
+  <!-- Carta -->
+  <section id="letter" class="hidden section-container center-content">
+    <div class="hogwarts-letter">
+      <div class="letter-seal">H</div>
+      <div class="letter-content">
+        <p>Querida Abi,</p>
+
+<p>Si la amistad fuera magia, la nuestra definitivamente estaría escrita en pergamino antiguo y protegida con un <em>Encantamiento Fidelius</em>, porque lo que tenemos es demasiado valioso como para perderse. 💫</p>
+
+<p>Quiero aprovechar este Día del Amor y la Amistad para decirte algo que quizá no siempre digo con palabras, pero que siento todo el tiempo: <strong>gracias por ser mi mejor amiga</strong>. Gracias por estar ahí en los días buenos, pero sobre todo en los días grises, cuando el mundo parece más oscuro… y tú apareces como un <em>Lumos</em> perfecto. ✨</p>
+
+<p>Contigo he vivido momentos que guardaría sin dudar en el <em>Pensadero</em>: risas que duelen en el estómago, pláticas infinitas, locuras, recuerdos simples que se vuelven enormes… solo porque estás tú. Eres esa persona que hace que todo sea más llevadero, como un hechizo silencioso que protege sin que uno se dé cuenta. 🪄</p>
+
+<p>Nuestra amistad me recuerda a <em>Hogwarts</em>: no importa qué tan caótico esté el mundo afuera, contigo siempre hay un lugar seguro al que volver.</p>
+
+<p>Y si tuviera que elegir una casa para ti, sería una mezcla perfecta:<br>
+el corazón leal de <span class="house hufflepuff">Hufflepuff</span>,<br>
+la valentía de <span class="house gryffindor">Gryffindor</span>,<br>
+la inteligencia de <span class="house ravenclaw">Ravenclaw</span><br>
+y ese brillo especial que solo tú tienes. 💛❤️💙💚</p>
+
+<p>Gracias por aceptarme tal y como soy, por reírte conmigo, por escucharme, por no soltar mi mano ni siquiera cuando llegan los dementores en forma de problemas.</p>
+
+<p>Tenerte en mi vida es como tener a mi persona favorita en el <em>Mapa del Merodeador</em>: siempre presente, siempre importante. 🗺️</p>
+
+<p>Abi, esta carta es solo una pequeña forma de decirte que <strong>te quiero muchísimo</strong>, que valoro cada momento contigo y que nuestra amistad es una de las cosas más bonitas que tengo.</p>
+
+<p>Que nunca nos falte la magia, las risas y las aventuras juntas.</p>
+
+<p class="signature">Con todo mi cariño,<br>— Ibra, tu amigo muggle... o no</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="memories" class="hidden section-container">
+    <h2 class="section-title">Recuerdos Encantados</h2>
+    <div class="carousel-container">
+      <div class="carousel-slide" id="carousel-slide"></div>
+      <button id="prev-btn" class="carousel-btn">‹</button>
+      <button id="next-btn" class="carousel-btn">›</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+  </section>
+
+  <!-- Magia Viva -->
+  <section id="interactive" class="hidden section-container">
+    <h2 class="section-title">Magia Viva</h2>
+
+    <div class="interactive-box">
+      <h3>Sombrero Seleccionador</h3>
+      <button id="sorting-hat-btn" class="btn-gold">¡Preguntar al Sombrero!</button>
+      <p id="house-result" class="house-result"></p>
+    </div>
+
+    <div class="interactive-box">
+      <h3>Lanza un hechizo</h3>
+      <button id="spell-btn" class="btn-gold">¡Expecto Patronum!</button>
+      <div id="spell-effect" class="spell-effect">
+        <img src="media/patronus.webp" alt="Patronus" class="effect-image">
+      </div>
+    </div>
+
+    <div class="interactive-box">
+      <h3>Envía una lechuza</h3>
+      <button id="owl-btn" class="btn-gold">Enviar Lechuza</button>
+      <div id="owl-animation" class="owl-animation">
+        <img src="media/HEDWIG.png" alt="Lechuza" class="effect-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Final -->
+  <section id="final" class="hidden section-container center-content">
+    <h2 class="section-title">La verdadera magia...</h2>
+    <p class="final-text">
+      ...no está en las varitas ni en los hechizos.<br>
+      Está en las personas que iluminan tu vida como las velas en el Gran Comedor.<br>
+      Gracias por ser mi amiga, mi compañera de aventuras y hacer la escuela menos aburrida.<br>
+      Que esta amistad dure más allá de los siete libros.
+    </p>
+    <p class="love-note">Para Abi ❤️</p>
+  </section>
+
+  <!-- Audio -->
+  <div id="audio-controls" class="hidden">
+    <button id="music-toggle" class="audio-btn">🔊 Música ON</button>
+  </div>
+
+  <!-- Audios -->
+  <audio id="bg-music" preload="auto"><source src="sonidos/MusicaFondoHP.mp3" type="audio/mpeg"></audio>
+  <audio id="spell-sound" preload="auto"><source src="sonidos/HECHIZO.mp3" type="audio/mpeg"></audio>
+  <audio id="page-sound" preload="auto"><source src="sonidos/HojaSonido.mp3" type="audio/mpeg"></audio>
+  <audio id="owl-sound" preload="auto"><source src="sonidos/BUHO.mp3" type="audio/mpeg"></audio>
+
+  <!-- Librerías -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
